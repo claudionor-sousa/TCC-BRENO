@@ -1,0 +1,37 @@
+.ContainerForm{
+    display: flex;
+    justify-content: center;
+    margin:  0px 10%;
+    padding:  0px 0;
+    flex-direction: column;
+    height: 100%;
+    .ItemTextField{
+        margin:  5% 0px;
+        .MuiInputBase-input{
+            cursor: pointer;
+        }
+       
+        .MuiInputBase-root::before{
+            border-bottom:1px solid white !important;
+            cursor: pointer;
+        }
+        .MuiInputBase-root::after{
+            border-bottom:1px solid #cb335c !important;
+        }
+    }
+}
+.ContainerForgetPassword{
+    display: flex;
+    padding: 1% 10%;
+    .containerCheck{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .containerPassword{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        
+    }
+}

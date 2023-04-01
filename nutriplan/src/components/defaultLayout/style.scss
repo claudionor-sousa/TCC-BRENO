@@ -1,0 +1,71 @@
+body{
+    margin:0
+}
+.ContainerGrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: gray;
+    padding: 20px;
+    .ContainerMain{
+        display: grid;
+        width: 30%;
+        grid-template-columns:  1fr;
+        grid-template-rows: 80px 1fr auto auto;
+        grid-template-areas: 'header' 'content'  'ForgetPassword' ' footer';
+        border: none;
+        border-radius: 20px;
+        background-color: white;
+        padding:5px
+    }
+    .ContainerHeader{
+        grid-area: header;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .title{
+            font-size: 2rem;
+            color:black;
+            text-align: center;
+            margin: 20px 0px;
+        }
+    }
+    .ContainerContent{
+        grid-area: content;
+    }
+    .ContainerForgetPasswordMain{
+        grid-area: ForgetPassword;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+
+    .ContainerFooter{
+        grid-area: footer;
+        .ContainerButton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .MuiButton-root{
+                background-color: #a13854;
+                padding: 1% 10%;
+                width: 80%;
+                margin: 1%;
+                color: white;
+                &:hover{
+                    background-color: #cb335c;
+                }
+            }
+        }
+        .NoAccount{
+            text-align: center;
+            span{
+                color: green;
+            }
+        }
+    }
+
+}
+
